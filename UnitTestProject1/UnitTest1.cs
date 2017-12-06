@@ -17,5 +17,16 @@ namespace UnitTestProject1
             Assert.AreEqual(120, actual);
 
         }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            FactClass obj = new FactClass();
+
+            int actual = obj.Fact(3);
+
+            Assert.AreEqual(6, actual);
+
+        }
     }
 }

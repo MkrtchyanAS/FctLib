@@ -10,13 +10,9 @@ namespace FctLib
     {
         public int Fact(int a)
         {
-
-            int fact;
-            fact = 1;
-            a = 1;
-            for (; a > 0; fact *= a--);
-            return fact;
-
+            int factorial = 1;
+            for (; a > 0; factorial *= a--) ;
+            return factorial;
         }
 
     }
