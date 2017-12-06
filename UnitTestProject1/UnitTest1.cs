@@ -10,7 +10,11 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod1()
         {
-            Fact(6);
+            FactClass obj = new FactClass();
+
+            int actual = obj.Fact(5);
+
+            Assert.AreEqual(120, actual);
 
         }
     }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FctLib
 {
-    public class Factorial
+    public class FactClass
     {
-        public static int Fact(int a)
+        public int Fact(int a)
         {
 
             int fact;
