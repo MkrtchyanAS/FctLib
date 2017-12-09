@@ -25,11 +25,12 @@ namespace WindowsFormsApplication1
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
+            label1.Text = "Введите целое число";
 
-            if (int.TryParse(textBox1.Text, out int n))
+            if (long.TryParse(textBox1.Text, out long n))
             {
                 FactClass obj = new FactClass();
-                int res = obj.Fact(n);
+                long res = obj.Fact(n);
                 string s = res.ToString();
                 label1.Text = s;
             }
@@ -39,11 +40,6 @@ namespace WindowsFormsApplication1
             }
 
         }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
-        } 
 
         private void Label1_Click(object sender, EventArgs e)
         {

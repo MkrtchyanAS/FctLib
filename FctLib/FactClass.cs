@@ -12,9 +12,9 @@ namespace FctLib
         /// <summary>
         /// Находит факториал переданного числа
         /// </summary>
-        public int Fact(int a)
+        public long Fact(long a)
         {
-            int factorial = 1;
+            long factorial = 1;
             for (; a > 0; factorial *= a--);
             return factorial;
         }

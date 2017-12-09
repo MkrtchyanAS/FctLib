@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -42,16 +42,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Результат";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(156, 181);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 46);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Вычислить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // textBox1
             // 
@@ -67,8 +57,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 265);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Находим факториал";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -80,7 +70,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -12,7 +12,7 @@ namespace UnitTestProject1
         {
             FactClass obj = new FactClass();
 
-            int actual = obj.Fact(5);
+            long actual = obj.Fact(5);
 
             Assert.AreEqual(120, actual);
 
@@ -23,9 +23,20 @@ namespace UnitTestProject1
         {
             FactClass obj = new FactClass();
 
-            int actual = obj.Fact(3);
+            long actual = obj.Fact(3);
 
             Assert.AreEqual(6, actual);
+
+        }
+
+        [TestMethod]
+        public void TestMethod20()
+        {
+            FactClass obj = new FactClass();
+
+            long actual = obj.Fact(20);
+
+            Assert.AreEqual(2432902008176640000, actual);
 
         }
     }
