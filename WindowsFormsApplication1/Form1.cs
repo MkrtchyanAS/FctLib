@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FctLib;
 
 namespace WindowsFormsApplication1
 {
@@ -22,17 +23,29 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
+
+            if (int.TryParse(textBox1.Text, out int n))
+            {
+                FactClass obj = new FactClass();
+                int res = obj.Fact(n);
+                string s = res.ToString();
+                label1.Text = s;
+            }
+            else
+            {
+                label1.Text = string.Empty;
+            }
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
 
-        }
+        } 
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }

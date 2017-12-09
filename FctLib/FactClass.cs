@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace FctLib
 {
+
     public class FactClass
     {
+        /// <summary>
+        /// Находит факториал переданного числа
+        /// </summary>
         public int Fact(int a)
         {
             int factorial = 1;
-            for (; a > 0; factorial *= a--) ;
+            for (; a > 0; factorial *= a--);
             return factorial;
         }
 
